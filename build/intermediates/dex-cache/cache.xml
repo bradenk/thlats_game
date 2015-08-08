@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Android\THL-Game\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="dcead2394e36bdc9825442eba2cdba77be142942">
+        <dex dex="C:\Android\THL-Game\android\build\intermediates\pre-dexed\debug\core-1.0-91981227213d7aefa93f1c8913c49762261c37be.jar" />
+    </item>
+
+</items>

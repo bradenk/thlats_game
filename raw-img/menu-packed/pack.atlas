@@ -1,0 +1,41 @@
+
+pack.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+menuFrame
+  rotate: false
+  xy: 2, 201
+  size: 780, 751
+  orig: 780, 751
+  offset: 0, 0
+  index: -1
+quitBtn
+  rotate: false
+  xy: 2, 2
+  size: 94, 71
+  orig: 94, 71
+  offset: 0, 0
+  index: -1
+resumeBtn
+  rotate: false
+  xy: 2, 136
+  size: 353, 63
+  orig: 353, 63
+  offset: 0, 0
+  index: -1
+settingsBtn
+  rotate: false
+  xy: 784, 840
+  size: 140, 112
+  orig: 140, 112
+  offset: 0, 0
+  index: -1
+startBtn
+  rotate: false
+  xy: 2, 75
+  size: 313, 59
+  orig: 313, 59
+  offset: 0, 0
+  index: -1

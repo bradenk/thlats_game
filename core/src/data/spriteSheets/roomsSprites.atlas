@@ -1,0 +1,132 @@
+
+roomsSprites.png
+size: 256,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+stone_F_C
+  rotate: false
+  xy: 192, 57
+  size: 32, 22
+  orig: 32, 22
+  offset: 0, 0
+  index: -1
+stone_F_L
+  rotate: false
+  xy: 36, 12
+  size: 37, 22
+  orig: 37, 22
+  offset: 0, 0
+  index: -1
+stone_F_R
+  rotate: false
+  xy: 75, 12
+  size: 37, 22
+  orig: 37, 22
+  offset: 0, 0
+  index: -1
+stone_M_C
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+stone_M_L
+  rotate: false
+  xy: 119, 82
+  size: 37, 42
+  orig: 37, 42
+  offset: 0, 0
+  index: -1
+stone_M_R
+  rotate: false
+  xy: 119, 38
+  size: 37, 42
+  orig: 37, 42
+  offset: 0, 0
+  index: -1
+stone_T_C
+  rotate: false
+  xy: 158, 81
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: -1
+stone_T_L
+  rotate: false
+  xy: 2, 81
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+stone_T_R
+  rotate: false
+  xy: 2, 36
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+wood_F_C
+  rotate: false
+  xy: 192, 38
+  size: 32, 17
+  orig: 32, 17
+  offset: 0, 0
+  index: -1
+wood_F_L
+  rotate: false
+  xy: 119, 14
+  size: 37, 22
+  orig: 37, 22
+  offset: 0, 0
+  index: -1
+wood_F_R
+  rotate: false
+  xy: 158, 14
+  size: 37, 22
+  orig: 37, 22
+  offset: 0, 0
+  index: -1
+wood_M_C
+  rotate: false
+  xy: 158, 47
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+wood_M_L
+  rotate: false
+  xy: 41, 81
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+wood_M_R
+  rotate: false
+  xy: 41, 36
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+wood_T_C
+  rotate: false
+  xy: 192, 81
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: -1
+wood_T_L
+  rotate: false
+  xy: 80, 81
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+wood_T_R
+  rotate: false
+  xy: 80, 36
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
