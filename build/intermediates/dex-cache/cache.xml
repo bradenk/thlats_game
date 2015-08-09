@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Android\THL-Game\core\build\libs\core-1.0.jar"
+        jar="D:\Android_workspace\THL-Game\core\build\libs\core-1.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="dcead2394e36bdc9825442eba2cdba77be142942">
-        <dex dex="C:\Android\THL-Game\android\build\intermediates\pre-dexed\debug\core-1.0-91981227213d7aefa93f1c8913c49762261c37be.jar" />
+        sha1="ba7bd96e7b45c2ce07b845329b0f6167dd666e24">
+        <dex dex="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\core-1.0-0ee21540e14c0e06cddd7f77bf2a92715f64e7d2.jar" />
+    </item>
+    <item
+        jar="C:\Users\braden\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.6.1\54d45169ae4f97d6ae4fe9daed87d80eea700f67\gdx-box2d-1.6.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="54d45169ae4f97d6ae4fe9daed87d80eea700f67">
+        <dex dex="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.6.1-2a72034cd73a34bb3518d0b9710eb19eb67533b6.jar" />
+    </item>
+    <item
+        jar="C:\Users\braden\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.6.1\bb5fe9832bcfe4bbc1de6bd357085b8a2a845d9c\gdx-1.6.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="bb5fe9832bcfe4bbc1de6bd357085b8a2a845d9c">
+        <dex dex="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\gdx-1.6.1-08613964ecfaae0fb8f3565fbf577cbed20ec1bd.jar" />
+    </item>
+    <item
+        jar="C:\Users\braden\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.6.1\b9a5bc4404bab9feff8963bb0bd4685164e0166c\gdx-backend-android-1.6.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b9a5bc4404bab9feff8963bb0bd4685164e0166c">
+        <dex dex="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.6.1-952c13822322d1a7f131ef0d1c44d5812fe0a3d8.jar" />
     </item>
 
 </items>

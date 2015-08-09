@@ -3,6 +3,7 @@ package com.bkd.thlatsGame.UI;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.bkd.thlatsGame.AssetLoader;
+import com.bkd.thlatsGame.Assets;
 import com.bkd.thlatsGame.u.Rect;
 
 /**
@@ -23,12 +24,12 @@ public class UIMainMenu extends Rect {
         this.right = x + w;
         this.top = y;
         this.bottom = y + h;
-        sprite = AssetLoader.getSprite(AssetLoader.menuSprites,"menuFrame");
+        sprite = AssetLoader.getSprite(Assets.menuSprites,"menuFrame");
         sprite.setPosition((int)x , (int)y);
         buttons = new bkdBtn[]{
                 new bkdBtn(240,56,"start","startBtn"),
-                new bkdBtn(221,273,"resume","resumeBtn"),
-                new bkdBtn(232,482,"quit","quitBtn"),
+                new bkdBtn(271,273,"resume","resumeBtn"),
+                new bkdBtn(600,482,"quit","quitBtn"),
                 new bkdBtn(564,460,"settings","settingsBtn")
         };
         for (int i = 0; i < buttons.length; i++) {

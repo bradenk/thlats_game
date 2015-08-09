@@ -1,15 +1,13 @@
 package com.bkd.thlatsGame.UI;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.utils.Array;
 import com.bkd.thlatsGame.AssetLoader;
-import com.bkd.thlatsGame.MainMenu;
+import com.bkd.thlatsGame.Graphics.Anim;
 import com.bkd.thlatsGame.u.Rect;
+
+import java.util.ArrayList;
 
 
 /**
@@ -19,32 +17,29 @@ public class UIPlatform  {
     private Rect hitZone;
     private Sprite sprite;
     public int x, y, width, height;
-    public String name;
+    public buttonID id;
     private float sinX, sinY;
     private double xRan, yRan;
-    private int frames;
-    private int curframe = 0;
     private String spriteName;
-    private TextureAtlas txrA;
-    private Array<TextureAtlas.AtlasRegion> regions;
-    private Animation animation;
-    private float animationStateTime = 0;
-
-    public UIPlatform(int x, int y, String spriteName, String name) {
+    private TextureAtlas ta;
+    private ArrayList<Anim> anim;
+    private Boolean hasAnim = false;
+    public static enum buttonID  {
+        setting,start ,resume,quit
+    }
+    public UIPlatform(int x, int y, TextureAtlas ta, String spriteName, buttonID id) {
         this.x = x;
         this.y = y;
         this.spriteName = spriteName;
+        this.ta = ta;
+        this.id = id;
         Gdx.app.log("Sprite", spriteName);
         sinX = (float) Math.random() * 0.1f;
         sinY = (float) Math.random() * 0.1f;
         xRan = Math.random() * 0.05;
         yRan = Math.random() * 0.05;
-        this.name = name;
-        Gdx.app.log("MainMenu:","loaded " +name);
-        txrA = new TextureAtlas(Gdx.files.internal("data/spriteSheets/menuSprites.atlas"));
-        regions = txrA.findRegions(spriteName);
-        animation = new Animation(0.15f, regions ) ;
-        sprite = new Sprite(txrA.findRegion(spriteName));
+
+        sprite = AssetLoader.getSprite(ta,spriteName);
         Gdx.app.log("Sprite", "texture loaded");
 
         width = (int) sprite.getWidth();
@@ -57,21 +52,39 @@ public class UIPlatform  {
         hitZone = new Rect(x + r.left, y+r.top, x + r.left + r.width(),  y + r.top + r.height());
     }
     public void update(float delta) {
-        TextureRegion frame;
-        frame = animation.getKeyFrame(animationStateTime += delta, true);
+
         double offY = Math.sin(sinY) * 3;
         double offX = Math.sin(sinX) * 2;
         sinY += .03 + yRan ;
         sinX += .016 + xRan;
         hitZone.move((int) (offX), (int) (offY));
-        sprite.setRegion(frame);
         sprite.setPosition((int) (x + offX), (int) (y + offY));
-        sprite.flip(false,true);
+        if (hasAnim) {
+            for (Anim a : anim) {
+                a.update(delta);
+                a.move(offX, offY);
+            }
+        }
+    }
+    public void addAnim(TextureAtlas ta, String regions, float speed, int rx, int ry) {
+        if (!hasAnim) {
+            anim = new ArrayList<Anim>() ;
+        }
+        hasAnim = true;
+        Anim a = new Anim(ta,regions,speed);
+        a.setPosition(x+rx,y+ry);
+        anim.add(a);
     }
     public Sprite getSprite(){
         return sprite;
     }
     public Rect getHitZone(){
         return hitZone;
+    }
+    public boolean hasAnim(){
+        return hasAnim;
+    }
+    public ArrayList<Anim> getAnim() {
+        return anim;
     }
 }

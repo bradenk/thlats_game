@@ -6,10 +6,13 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.bkd.thlatsGame.AssetLoader;
+import com.bkd.thlatsGame.Assets;
+import com.bkd.thlatsGame.Graphics.Anim;
 import com.bkd.thlatsGame.UI.UIPlatform;
 import com.bkd.thlatsGame.worlds.MainMenuWorld;
+
+import java.util.ArrayList;
 
 /**
  * Created by Braden on 5/08/2015.
@@ -27,7 +30,7 @@ public class MainMenuRenderer implements screenRenderer {
         this.world = world;
         bgTxr = new Texture(Gdx.files.internal("data/img/chasmBg.png"));
         bg = new Sprite(bgTxr);
-        title = AssetLoader.getSprite(AssetLoader.menuSprites,"title");
+        title = AssetLoader.getSprite(Assets.menuSprites,"title");
         cam = new OrthographicCamera();
         cam.setToOrtho(true, 1920, 1080);
         title.scale(2);
@@ -37,16 +40,23 @@ public class MainMenuRenderer implements screenRenderer {
         batch.setProjectionMatrix(cam.combined);
     }
     public void render(){
-        platforms = world.getPlatforms();
-        Gdx.app.log("MainMenuRenderer", "render");
-        Gdx.gl.glClearColor(0, 0, 0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        batch.begin();
-        bg.draw(batch);
-        for (int i = 0; i < platforms.length; i++){
-            platforms[i].getSprite().draw(batch);
+
+            platforms = world.getPlatforms();
+            Gdx.app.log("MainMenuRenderer", "render");
+            Gdx.gl.glClearColor(0, 0, 0, 1);
+            Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+            batch.begin();
+            bg.draw(batch);
+            for (int i = 0; i < platforms.length; i++) {
+                platforms[i].getSprite().draw(batch);
+                if (platforms[i].hasAnim()) {
+                    ArrayList<Anim> anim = platforms[i].getAnim();
+                    for (Anim a : anim) {
+                        a.getSprite().draw(batch);
+                    }
+                }
+            }
+            title.draw(batch);
+            batch.end();
         }
-        title.draw(batch);
-        batch.end();
-    }
 }

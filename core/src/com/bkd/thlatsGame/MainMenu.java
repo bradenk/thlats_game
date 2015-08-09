@@ -7,7 +7,7 @@ import com.badlogic.gdx.Gdx;
  */
 public class MainMenu {
      public MainMenu(){
-         AssetLoader.load();
+         Assets.load();
      }
      public void update(float delta) {
 

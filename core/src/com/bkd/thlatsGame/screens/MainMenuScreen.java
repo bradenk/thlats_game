@@ -3,6 +3,7 @@ package com.bkd.thlatsGame.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.bkd.thlatsGame.AssetLoader;
+import com.bkd.thlatsGame.Assets;
 import com.bkd.thlatsGame.renderers.MainMenuRenderer;
 import com.bkd.thlatsGame.worlds.MainMenuWorld;
 
@@ -20,7 +21,7 @@ public class MainMenuScreen implements Screen {
         float gameWidth = 480;
         float gameHeight = screenHeight / (screenWidth / gameWidth);
         int midPointY = (int) (gameHeight / 2);
-        AssetLoader.load();
+        Assets.load();
         world = new MainMenuWorld(midPointY);
         renderer = new MainMenuRenderer(world);
 

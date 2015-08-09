@@ -1,0 +1,153 @@
+
+ship_anim.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+anchor
+  rotate: false
+  xy: 95, 2
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 1
+anchor
+  rotate: false
+  xy: 188, 142
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 2
+anchor
+  rotate: false
+  xy: 281, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 3
+anchor
+  rotate: false
+  xy: 281, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 5
+anchor
+  rotate: false
+  xy: 363, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 4
+anchor
+  rotate: false
+  xy: 445, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 6
+anchor
+  rotate: false
+  xy: 527, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 7
+anchor
+  rotate: false
+  xy: 527, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 9
+anchor
+  rotate: false
+  xy: 609, 282
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: 8
+flag
+  rotate: false
+  xy: 691, 298
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: 1
+flag
+  rotate: false
+  xy: 781, 298
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: 2
+flag
+  rotate: false
+  xy: 871, 298
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: 3
+flag
+  rotate: false
+  xy: 177, 16
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: 4
+flag
+  rotate: false
+  xy: 270, 156
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: 5
+flag
+  rotate: false
+  xy: 360, 156
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: 6
+prop
+  rotate: false
+  xy: 2, 284
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: 1
+prop
+  rotate: false
+  xy: 2, 144
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: 2
+prop
+  rotate: false
+  xy: 95, 284
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: 3
+prop
+  rotate: false
+  xy: 2, 4
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: 4
+prop
+  rotate: false
+  xy: 95, 144
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: 5
+prop
+  rotate: false
+  xy: 188, 284
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: 6

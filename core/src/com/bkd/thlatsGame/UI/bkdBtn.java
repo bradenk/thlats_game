@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.bkd.thlatsGame.AssetLoader;
+import com.bkd.thlatsGame.Assets;
 import com.bkd.thlatsGame.u.Rect;
 
 /**
@@ -21,7 +22,7 @@ public class bkdBtn extends Rect {
         this.top = top;
         this.bottom = bottom;
         this.function = function;
-        sprite = AssetLoader.getSprite(AssetLoader.menuSprites, spriteName);
+        sprite = AssetLoader.getSprite(Assets.menuSprites, spriteName);
     }
     public void setSpritePosition(int oX, int oY) {
         sprite.setPosition((int)(left + oX),(int)(right + oY) );
