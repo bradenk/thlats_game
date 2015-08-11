@@ -5,57 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61532b8c-a360-41c6-a638-56c5b268af60" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\android\assets\data\spriteSheets\menuSprites2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\android\build\intermediates\assets\debug\data\spriteSheets\menuSprites2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\core-1.0-91981227213d7aefa93f1c8913c49762261c37be.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\gdx-1.6.1-c5b3b411adf42a8167e17d4b5e45fc1d336f2d99.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.6.1-13fd6e3af2cfe82da730e76339cd51c83735a04b.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.6.1-907cf75feb24c440edcfcd7ea77b3a9412b8f267.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\quit_1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\quit_2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\quit_3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\quit_4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\quit_5.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\quit_6.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\settings_1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\settings_2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\settings_3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Android_workspace\THL-Game\raw-img\menu\settings_4.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/BKInputProcessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/AssetLoader.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/AssetLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/MainMenu.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/MainMenu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/renderers/MainMenuRenderer.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/renderers/MainMenuRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/screens/MainMenuScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/screens/MainMenuScreen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/worlds/MainMenuWorld.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/worlds/MainMenuWorld.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/UIMainMenu.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/UIMainMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/THLGame.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/THLGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/UIPlatform$buttonID.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/UIPlatform$buttonID.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/UIPlatform.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/UIPlatform.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/outputs/apk/android-debug-unaligned.apk" afterPath="$PROJECT_DIR$/android/build/outputs/apk/android-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" afterPath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/bkdBtn.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/bkd/thlatsGame/UI/bkdBtn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/build/libs/desktop-1.0.jar" afterPath="$PROJECT_DIR$/desktop/build/libs/desktop-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/data/spriteSheets/menuSprites.png" afterPath="$PROJECT_DIR$/android/assets/data/spriteSheets/menuSprites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/data/spriteSheets/menuSprites.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/data/spriteSheets/menuSprites.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/resources/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/raw-img/menu/start.png" afterPath="$PROJECT_DIR$/raw-img/menu/start.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/MainMenu.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/MainMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/MainMenuRenderer.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/MainMenuRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/screens/MainMenuScreen.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/screens/MainMenuScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIMainMenu.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIMainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/bkdBtn.java" afterPath="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/bkdBtn.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/data/spriteSheets/menuSprites.atlas" afterPath="$PROJECT_DIR$/android/assets/data/spriteSheets/menuSprites.atlas" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/data/spriteSheets/menuSprites.atlas" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/data/spriteSheets/menuSprites.atlas" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeResources/androidTest/debug/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeResources/androidTest/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/res/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="THL-Game.iws" />
@@ -84,23 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bkdBtn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/bkdBtn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UIPlatform.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +80,11 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-              <folding />
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <folding>
+                <element signature="e#2486#2487#0" expanded="true" />
+                <element signature="e#2518#2519#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,17 +93,74 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenuRenderer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="THLGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6666665">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenuRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/MainMenuRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16596931">
-              <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BKInputProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/BKInputProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#329#349#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+                <element signature="e#1345#1346#0" expanded="true" />
+                <element signature="e#1406#1407#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+                <element signature="e#2318#2319#0" expanded="true" />
+                <element signature="e#2346#2347#0" expanded="true" />
+                <element signature="e#2419#2420#0" expanded="true" />
+                <element signature="e#2447#2448#0" expanded="true" />
+                <element signature="e#2504#2505#0" expanded="true" />
+                <element signature="e#2532#2533#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.18518518">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="497" column="32" selection-start-line="497" selection-start-column="32" selection-end-line="497" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -142,7 +170,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,7 +182,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1768,7 +1796,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Android\THL-Game" value="7193674321565" />
+        <entry key="C:\Android\THL-Game" value="7193674330000" />
         <entry key="D:\Android_workspace\THL-Game" value="7193674330000" />
       </map>
     </option>
@@ -2263,7 +2291,6 @@
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/World.java" />
         <option value="$PROJECT_DIR$/core/src/Renderer.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/StarMapRender.java" />
-        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/screenRenderer.java" />
         <option value="$PROJECT_DIR$/core/src/Painter.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/StarField.java" />
@@ -2278,16 +2305,18 @@
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/MainMenu.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/bkdBtn.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Assets.java" />
-        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIMainMenu.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Graphics/Anim.java" />
-        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Inputs.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/u/Signal.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/InputEngine.java" />
-        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/InputControl.java" />
+        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java" />
+        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java" />
         <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/MainMenuRenderer.java" />
+        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java" />
+        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java" />
+        <option value="$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/BKInputProcessor.java" />
       </list>
     </option>
   </component>
@@ -2303,9 +2332,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="22" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -2330,8 +2359,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
       <pane id="Scratches" />
       <pane id="AndroidView">
@@ -2340,6 +2367,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="THL-Game" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2414,7 +2445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="u" />
+              <option name="myItemId" value="UI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2440,8 +2471,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="THL-Game" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2677,34 +2716,43 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846153" sideWeight="0.49523053" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.4929306" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.49841017" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.50317967" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3236111" sideWeight="0.52313626" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.4974293" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61438847" sideWeight="0.51992285" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13113007" sideWeight="0.51946306" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747254" sideWeight="0.49682036" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747254" sideWeight="0.47774243" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16580977" sideWeight="0.22997947" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236111" sideWeight="0.47686374" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28333333" sideWeight="0.4736504" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.4974293" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13113007" sideWeight="0.4805369" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18131869" sideWeight="0.48007712" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16580977" sideWeight="0.77002054" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236111" sideWeight="0.4736504" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.49841017" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2755,18 +2803,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Graphics/Anim.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2791,13 +2833,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/InputControl.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/MainMenuRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Graphics/Anim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/bkdBtn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2806,7 +2911,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2867,12 +2975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2914,12 +3016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-          <folding>
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2987,13 +3083,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.074074">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/screenRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3005,12 +3094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3036,16 +3119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIMainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35564855">
@@ -3067,59 +3140,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Assets.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/THLGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="497" column="32" selection-start-line="497" selection-start-column="32" selection-end-line="497" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/AssetLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/InputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30839002">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3128,8 +3189,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/renderers/MainMenuRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16596931">
-          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/worlds/MainMenuWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/UI/UIPlatform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/bkd/thlatsGame/Input/BKInputProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#329#349#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2346#2347#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="e#2504#2505#0" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.18518518">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding />
         </state>
       </provider>

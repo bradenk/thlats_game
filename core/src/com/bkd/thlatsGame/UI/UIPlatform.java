@@ -3,6 +3,7 @@ package com.bkd.thlatsGame.UI;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.math.Vector2;
 import com.bkd.thlatsGame.AssetLoader;
 import com.bkd.thlatsGame.Graphics.Anim;
 import com.bkd.thlatsGame.u.Rect;
@@ -40,16 +41,19 @@ public class UIPlatform  {
         yRan = Math.random() * 0.05;
 
         sprite = AssetLoader.getSprite(ta,spriteName);
-        Gdx.app.log("Sprite", "texture loaded");
 
         width = (int) sprite.getWidth();
         height = (int) sprite.getHeight();
-
-
-
+        hitZone = new Rect();
     }
-    public void setHitZone(Rect r) {
-        hitZone = new Rect(x + r.left, y+r.top, x + r.left + r.width(),  y + r.top + r.height());
+    public void setHitZone(int left, int top, int width, int height) {
+        hitZone.left = x + left;
+        hitZone.top = y + top;
+        hitZone.right = hitZone.left + width;
+        hitZone.bottom = hitZone.top + height;
+    }
+    public boolean isHit(Vector2 v){
+        return  ((v.x > hitZone.left) && (v.x < hitZone.right) && (v.y > hitZone.top) && (v.y < y + hitZone.bottom) );
     }
     public void update(float delta) {
 

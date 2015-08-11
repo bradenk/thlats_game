@@ -21,7 +21,6 @@ public class AssetLoader {
 
 
     public static Sprite getSprite(TextureAtlas atlas, String regionName){
-        Gdx.app.log("assetLoader","starting");
         AtlasRegion region = atlas.findRegion(regionName);
         Sprite s = new Sprite(region);
         s.flip(false, true);
