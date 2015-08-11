@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -31,6 +32,10 @@ public class MainMenuRenderer implements screenRenderer {
     private Sprite title;
     private UIPlatform[] platforms;
     private ShapeRenderer shpR;
+    private BitmapFont f;
+    private Map<Integer,BKInputProcessor.TouchPoint> touches;
+    private ArrayList<BKInputProcessor.TouchPoint> tArray;
+
 
     public MainMenuRenderer(MainMenuWorld world) {
         this.world = world;
@@ -43,12 +48,12 @@ public class MainMenuRenderer implements screenRenderer {
         title.setPosition(cam.viewportWidth / 2 - title.getWidth() / 2, 120);
         batch = new SpriteBatch();
         batch.setProjectionMatrix(cam.combined);
-        shpR = new ShapeRenderer();
-        shpR.setProjectionMatrix(cam.combined);
+        f = new BitmapFont(true);
 
     }
     public void render(){
-
+            touches = BKInputProcessor.getTouches();
+            tArray = touches.
             platforms = world.getPlatforms();
             Gdx.gl.glClearColor(0, 0, 0, 1);
             Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -63,12 +68,22 @@ public class MainMenuRenderer implements screenRenderer {
                         a.getSprite().draw(batch);
                     }
                 }
-                batch.end();
-                shpR.begin(ShapeRenderer.ShapeType.Filled);
-                shpR.setColor(Color.CYAN);
-                shpR.rect(p.getHitZone().left, p.getHitZone().top, p.getHitZone().width(), p.getHitZone().height());
-                shpR.end();
-                batch.begin();
+
+            }
+
+            if (touches != null) {
+            outer:  for (int i = 0; i < touches.size(); i++) {
+                    if (touches.containsKey(i)){
+                    BKInputProcessor.TouchPoint t = touches.get(i);
+                        for (int j = 0; j < platforms.length; j++) {
+                            UIPlatform p = platforms[j];
+                            if (p.isHit(t.pos)) {
+                                f.draw(batch, p.id + "has been pressed ", 10,10);
+                                break outer;
+                            }
+                        }
+                    }
+                }
             }
             title.draw(batch);
             batch.end();

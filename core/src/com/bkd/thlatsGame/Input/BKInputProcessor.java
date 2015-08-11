@@ -11,13 +11,15 @@ import java.util.Map;
  */
 public class BKInputProcessor implements InputProcessor {
 
-    public static Map<Integer,TouchPoint> touches = new HashMap<Integer,TouchPoint>();
+    public static Map<Integer,TouchPoint> tDown = new HashMap<Integer,TouchPoint>();
+    public static Map<Integer,TouchPoint> tUp = new HashMap<Integer,TouchPoint>();
+
 
     public static Map<Integer,TouchPoint> getTouches(){
-        if (touches.isEmpty()) {
+        if (tDown.isEmpty()) {
             return null;
         } else {
-            return touches;
+            return tDown;
         }
     }
 
@@ -67,30 +69,42 @@ public class BKInputProcessor implements InputProcessor {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        if (touches.containsKey(pointer)) {
-            touches.get(pointer).move(screenX, screenY);
-            touches.get(pointer).down();
+        if (tDown.containsKey(pointer)) {
+            tDown.get(pointer).move(screenX, screenY);
+        } else if (tUp.containsKey(pointer)){
+            TouchPoint t = tUp.get(pointer);
+            tUp.remove(pointer);
+            tDown.put(pointer,t);
         } else {
-            touches.put(pointer,new TouchPoint(screenX, screenY));
-            touches.get(pointer).down();
+            TouchPoint t = new TouchPoint(screenX,screenY);
+            t.down();
+            tDown.put(pointer, t);
         }
-        return true;
+
+        return false;
     }
 
     @Override
     public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-        if (touches.containsKey(pointer)) {
-            touches.get(pointer).move(screenX, screenY);
-            touches.get(pointer).up();
+
+        if (tUp.containsKey(pointer)) {
+            tUp.get(pointer).move(screenX, screenY);
+            tUp.get(pointer).down();
+        } else if (tDown.containsKey(pointer)){
+            TouchPoint t = tDown.get(pointer);
+            tDown.remove(pointer);
+            tUp.put(pointer,t);
         } else {
-            touches.put(pointer,new TouchPoint(screenX, screenY));
-            touches.get(pointer).up();
+            TouchPoint t = new TouchPoint(screenX,screenY);
+            t.down();
+            tUp.put(pointer, t);
         }
-        return true;
+        return false;
     }
 
     @Override
-    public boolean touchDragged(int screenX, int screenY, int pointer) {
+    public boolean touchDragged(int screenX, int screenY, int pointer)  {
+
         return false;
     }
 
