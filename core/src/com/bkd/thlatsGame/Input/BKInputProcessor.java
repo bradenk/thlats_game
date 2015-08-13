@@ -3,7 +3,7 @@ package com.bkd.thlatsGame.Input;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.input.GestureDetector;
-import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,16 +31,16 @@ public class BKInputProcessor implements InputProcessor  {
 
 
     public class TouchPoint {
-        public Vector2 pos = new Vector2();
+        public Vector3 pos = new Vector3();
         private int id;
         private boolean down = false;
         private boolean justPressed = false;
         private boolean dragging = false;
 
         public TouchPoint(int x, int y) {
-            pos.set(x,y);
+            pos.set(x,y,0);
         }
-        public void setPos(int x, int y) { pos.set(x,y); }
+        public void setPos(int x, int y) { pos.set(x,y,0); }
         public int getX() { return (int)pos.x; }
         public int getY() { return (int)pos.y; }
         public float getYf() { return pos.y; };

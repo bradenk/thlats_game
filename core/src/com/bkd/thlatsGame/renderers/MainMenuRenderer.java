@@ -57,8 +57,12 @@ public class MainMenuRenderer implements screenRenderer {
 
     }
     public void render(){
+            zc.update(cam);
+            cam.zoom = 1 / zc.getZoom();
+            Gdx.app.log("Cam zoom", ""+cam.zoom);
+            cam.update();
+            batch.setProjectionMatrix(cam.combined);
             touches = MainMenuScreen.touches;
-            zc.update();
             platforms = world.getPlatforms();
             Gdx.gl.glClearColor(0, 0, 0, 1);
             Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -83,6 +87,7 @@ public class MainMenuRenderer implements screenRenderer {
             }
             f.draw(batch,zc.zoomDebug(), 20, 300);
             title.draw(batch);
+
             batch.end();
         }
 }
