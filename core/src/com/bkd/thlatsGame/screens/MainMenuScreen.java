@@ -4,6 +4,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.bkd.thlatsGame.AssetLoader;
 import com.bkd.thlatsGame.Assets;
+import com.bkd.thlatsGame.Input.BKInputProcessor;
+import com.bkd.thlatsGame.Input.InputHolder;
 import com.bkd.thlatsGame.renderers.MainMenuRenderer;
 import com.bkd.thlatsGame.worlds.MainMenuWorld;
 
@@ -13,7 +15,8 @@ import com.bkd.thlatsGame.worlds.MainMenuWorld;
 public class MainMenuScreen implements Screen {
     private MainMenuRenderer renderer;
     private MainMenuWorld world;
-
+    private BKInputProcessor ip;
+    public static BKInputProcessor.TouchPoint[] touches;
 
     public MainMenuScreen() {
         float screenWidth = Gdx.graphics.getWidth();
@@ -24,7 +27,7 @@ public class MainMenuScreen implements Screen {
         Assets.load();
         world = new MainMenuWorld(midPointY);
         renderer = new MainMenuRenderer(world);
-
+        ip = new BKInputProcessor();
     }
 
     @Override
@@ -34,6 +37,7 @@ public class MainMenuScreen implements Screen {
 
     @Override
     public void render(float delta) {
+        touches = InputHolder.touches;
         world.update(delta);
         renderer.render();
     }

@@ -13,7 +13,9 @@ import com.bkd.thlatsGame.AssetLoader;
 import com.bkd.thlatsGame.Assets;
 import com.bkd.thlatsGame.Graphics.Anim;
 import com.bkd.thlatsGame.Input.BKInputProcessor;
+import com.bkd.thlatsGame.Input.ZoomControl;
 import com.bkd.thlatsGame.UI.UIPlatform;
+import com.bkd.thlatsGame.screens.MainMenuScreen;
 import com.bkd.thlatsGame.worlds.MainMenuWorld;
 
 import java.util.ArrayList;
@@ -33,12 +35,15 @@ public class MainMenuRenderer implements screenRenderer {
     private UIPlatform[] platforms;
     private ShapeRenderer shpR;
     private BitmapFont f;
-    private Map<Integer,BKInputProcessor.TouchPoint> touches;
+    private BKInputProcessor.TouchPoint[] touches;
     private ArrayList<BKInputProcessor.TouchPoint> tArray;
+    private ZoomControl zc;
 
 
     public MainMenuRenderer(MainMenuWorld world) {
+
         this.world = world;
+        zc = new ZoomControl();
         bgTxr = new Texture(Gdx.files.internal("data/img/chasmBg.png"));
         bg = new Sprite(bgTxr);
         title = AssetLoader.getSprite(Assets.menuSprites,"title");
@@ -52,8 +57,8 @@ public class MainMenuRenderer implements screenRenderer {
 
     }
     public void render(){
-            touches = BKInputProcessor.getTouches();
-            tArray = touches.
+            touches = MainMenuScreen.touches;
+            zc.update();
             platforms = world.getPlatforms();
             Gdx.gl.glClearColor(0, 0, 0, 1);
             Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -68,23 +73,15 @@ public class MainMenuRenderer implements screenRenderer {
                         a.getSprite().draw(batch);
                     }
                 }
-
             }
-
-            if (touches != null) {
-            outer:  for (int i = 0; i < touches.size(); i++) {
-                    if (touches.containsKey(i)){
-                    BKInputProcessor.TouchPoint t = touches.get(i);
-                        for (int j = 0; j < platforms.length; j++) {
-                            UIPlatform p = platforms[j];
-                            if (p.isHit(t.pos)) {
-                                f.draw(batch, p.id + "has been pressed ", 10,10);
-                                break outer;
-                            }
-                        }
+            if (touches[0].isJustPressed()) {
+                for (int j = 0; j < platforms.length; j++) {
+                    if ( platforms[j].isHit(touches[0].pos)) {
+                        Gdx.app.log("Renderer",platforms[j].id + " has been pressed");
                     }
                 }
             }
+            f.draw(batch,zc.zoomDebug(), 20, 300);
             title.draw(batch);
             batch.end();
         }

@@ -5,7 +5,7 @@
         jar="C:\Android\THL-Game\core\build\libs\core-1.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="09b3da32350ceb805e4327377010e32dbb94cc14">
+        sha1="be03f5ef21ba715b19678acc41ff8b508723697e">
         <dex dex="C:\Android\THL-Game\android\build\intermediates\pre-dexed\debug\core-1.0-91981227213d7aefa93f1c8913c49762261c37be.jar" />
     </item>
 
