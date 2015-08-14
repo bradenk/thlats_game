@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.Vector3;
 import com.bkd.thlatsGame.AssetLoader;
 import com.bkd.thlatsGame.Assets;
 import com.bkd.thlatsGame.Graphics.Anim;
@@ -38,7 +39,8 @@ public class MainMenuRenderer implements screenRenderer {
     private BKInputProcessor.TouchPoint[] touches;
     private ArrayList<BKInputProcessor.TouchPoint> tArray;
     private ZoomControl zc;
-
+    private Vector3 screenCenter;
+    private Vector3 camC;
 
     public MainMenuRenderer(MainMenuWorld world) {
 
@@ -49,6 +51,7 @@ public class MainMenuRenderer implements screenRenderer {
         title = AssetLoader.getSprite(Assets.menuSprites,"title");
         cam = new OrthographicCamera();
         cam.setToOrtho(true, 1920, 1080);
+        camC = cam.position;
         title.scale(2);
         title.setPosition(cam.viewportWidth / 2 - title.getWidth() / 2, 120);
         batch = new SpriteBatch();
@@ -56,11 +59,21 @@ public class MainMenuRenderer implements screenRenderer {
         f = new BitmapFont(true);
 
     }
+    public void limitCam(){
+        if (cam.position.x > 1920) cam.position.x  = 1920;
+        else if (cam.position.x < 0) cam.position.x  = 0;
+        if (cam.position.y > 1080) cam.position.x  = 1080;
+        else if (cam.position.y < 0) cam.position.x  = 0;
+    }
     public void render(){
             zc.update(cam);
-            cam.zoom = 1 / zc.getZoom();
-            Gdx.app.log("Cam zoom", ""+cam.zoom);
-            cam.update();
+            if (zc.isZooming()) {
+                cam.zoom = zc.getZoom();
+                cam.translate(zc.getCenter());
+                limitCam();
+                cam.update();
+            }
+          //  Gdx.app.log("Cam zoom", ""+cam.zoom);
             batch.setProjectionMatrix(cam.combined);
             touches = MainMenuScreen.touches;
             platforms = world.getPlatforms();

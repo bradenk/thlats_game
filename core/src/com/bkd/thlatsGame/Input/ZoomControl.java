@@ -11,14 +11,18 @@ import com.bkd.thlatsGame.u.U;
  */
 public class ZoomControl {
     public static float zoom;
-    private final float MAXZOOM = 4;
-    private final float MINZOOM = 1;
+    private final float MAXZOOM = 1;
+    private final float MINZOOM = .25f;
     private boolean isZooming = false;
     private float initDist = 0;
     private float curDist = 0;
     private float initZoom = 1;
     private float lastZoom = 1;
     private Vector3 Sp1,Sp2;
+    private Vector3 Smp = new Vector3();
+    private Vector3 center = new Vector3();
+    private Vector3 lastCenter = new Vector3();
+    private Vector3 offset = new Vector3();
     Vector3 p1, p2;
     BKInputProcessor.TouchPoint[] touches;
 
@@ -27,13 +31,18 @@ public class ZoomControl {
         if (touches[0].isDown() && touches[1].isDown()) {
             p1 = touches[0].pos;
             p2 = touches[1].pos;
-            p1 = cam.unproject(p1);
-            p2 = cam.unproject(p2);
+            center.set((p1.x + p2.x) / 2, (p1.y + p2.y) / 2, 0);
+            Gdx.app.log("camera center", center.x + " ' " + center.y);
             curDist = p1.dst(p2);
             if (isZooming) {
                 curDist = p1.dst(p2);
-                zoom =  U.clamp((lastZoom * (curDist/initDist) * 0.5f) , MINZOOM, MAXZOOM);
+                zoom =  U.clamp((lastZoom / (curDist / initDist)), MINZOOM, MAXZOOM);
+                offset.set(lastCenter.x - center.x, lastCenter.y - center.y, 0);
+                lastCenter.set(center);
+                Gdx.app.log("camera lastcenter" , lastCenter.x + " ' " +lastCenter.y);
+                Gdx.app.log("camera offset" , offset.x + " ' " +offset.y);
             } else {
+                lastCenter = new Vector3(center);
                 Sp1 = new Vector3(p1);
                 Sp2 = new Vector3(p2);
                 initDist = Sp1.dst(Sp2);
@@ -48,6 +57,13 @@ public class ZoomControl {
     }
     public float getZoom(){
         return U.clamp(zoom , MINZOOM, MAXZOOM);
+    }
+    public Vector3 getCenter() {
+
+        return offset.scl(zoom);
+    }
+    public boolean isZooming() {
+        return isZooming;
     }
     public String zoomDebug(){
         if (isZooming) {
