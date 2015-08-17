@@ -1,6 +1,7 @@
 package com.bkd.thlatsGame.worlds;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Rectangle;
 import com.bkd.thlatsGame.AssetLoader;
@@ -8,6 +9,7 @@ import com.bkd.thlatsGame.Assets;
 import com.bkd.thlatsGame.Input.BKInputProcessor;
 import com.bkd.thlatsGame.Input.ZoomControl;
 import com.bkd.thlatsGame.MainMenu;
+import com.bkd.thlatsGame.THLGame;
 import com.bkd.thlatsGame.UI.UIMainMenu;
 import com.bkd.thlatsGame.UI.UIPlatform;
 import com.bkd.thlatsGame.screens.MainMenuScreen;
@@ -22,8 +24,11 @@ import java.util.Map;
 public class MainMenuWorld implements World {
     public UIPlatform[] platforms;
     public BKInputProcessor.TouchPoint[] touches;
+    public boolean switchScreen;
+    public THLGame.screens nextScreen;
 
     public MainMenuWorld(int midPointY) {
+
         platforms = new UIPlatform[]{
                 new UIPlatform(1028,644, Assets.menuSprites ,"settings", UIPlatform.buttonID.setting),
                 new UIPlatform(546,208, Assets.menuSprites , "start", UIPlatform.buttonID.start),
@@ -40,11 +45,23 @@ public class MainMenuWorld implements World {
         platforms[3].addAnim(Assets.shipAnimSprites,"anchor",1/6f,270,150);
     }
     public void update(float delta) {
-        touches = MainMenuScreen.touches;
+        touches = THLGame.touches;
         for (int i = 0; i < platforms.length; i++) {
             platforms[i].update(delta);
         }
+        if (touches[0].isDown()) {
+            for (int i = 0; i < platforms.length; i++) {
+                if (platforms[i].isHit(touches[0].posR)){
+                    if ( platforms[i].id == UIPlatform.buttonID.start) {
+                        switchScreen = true;
+                        nextScreen = THLGame.screens.Battle;
+                    }
+                    platforms[i].hit();
+                }
+            }
+        }
     }
+
     public UIPlatform[] getPlatforms(){
         return platforms;
     }

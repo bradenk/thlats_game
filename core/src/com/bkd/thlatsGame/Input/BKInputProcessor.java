@@ -2,6 +2,7 @@ package com.bkd.thlatsGame.Input;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.Vector3;
 
@@ -15,8 +16,7 @@ public class BKInputProcessor implements InputProcessor  {
     private static final int MAXTOUCHPOINTS = 5;
     private TouchPoint t;
     public boolean isInit = false;
-
-
+    public OrthographicCamera cam = new OrthographicCamera();
 
     public BKInputProcessor(){
         for (int i = 0; i < MAXTOUCHPOINTS; i++) {
@@ -24,7 +24,9 @@ public class BKInputProcessor implements InputProcessor  {
         }
         isInit = true;
     }
-
+    public void setCam(OrthographicCamera cam) {
+        this.cam = cam;
+    }
     public TouchPoint[] getTouches(){
         return InputHolder.touches;
     }
@@ -32,6 +34,7 @@ public class BKInputProcessor implements InputProcessor  {
 
     public class TouchPoint {
         public Vector3 pos = new Vector3();
+        public Vector3 posR = new Vector3();
         private int id;
         private boolean down = false;
         private boolean justPressed = false;
@@ -40,7 +43,11 @@ public class BKInputProcessor implements InputProcessor  {
         public TouchPoint(int x, int y) {
             pos.set(x,y,0);
         }
-        public void setPos(int x, int y) { pos.set(x,y,0); }
+        public void setPos(int x, int y) {
+            pos.set(x,y,0);
+            posR.set(x,y,0);
+            cam.unproject(posR);
+        }
         public int getX() { return (int)pos.x; }
         public int getY() { return (int)pos.y; }
         public float getYf() { return pos.y; };

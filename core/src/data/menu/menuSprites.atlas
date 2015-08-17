@@ -6,44 +6,64 @@ filter: Nearest,Nearest
 repeat: none
 quit
   rotate: false
-  xy: 2, 43
-  size: 489, 316
-  orig: 489, 316
+  xy: 2, 2
+  size: 402, 205
+  orig: 402, 205
   offset: 0, 0
-  index: 1
-quit
+  index: -1
+quit_hover
   rotate: false
-  xy: 493, 43
-  size: 489, 316
-  orig: 489, 316
+  xy: 406, 2
+  size: 402, 205
+  orig: 402, 205
   offset: 0, 0
-  index: 2
+  index: -1
 resume
   rotate: false
-  xy: 2, 361
-  size: 639, 263
-  orig: 639, 263
+  xy: 2, 209
+  size: 643, 267
+  orig: 643, 267
+  offset: 0, 0
+  index: -1
+settings_hover
+  rotate: false
+  xy: 647, 222
+  size: 254, 254
+  orig: 254, 254
+  offset: 0, 0
+  index: -1
+start
+  rotate: false
+  xy: 2, 750
+  size: 771, 270
+  orig: 771, 270
+  offset: 0, 0
+  index: -1
+start_hover
+  rotate: false
+  xy: 2, 478
+  size: 771, 270
+  orig: 771, 270
+  offset: 0, 0
+  index: -1
+
+menuSprites2.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+resume_hover
+  rotate: false
+  xy: 2, 43
+  size: 643, 267
+  orig: 643, 267
   offset: 0, 0
   index: -1
 settings
   rotate: false
-  xy: 771, 642
+  xy: 647, 60
   size: 250, 250
   orig: 250, 250
-  offset: 0, 0
-  index: 1
-settings
-  rotate: false
-  xy: 643, 374
-  size: 250, 250
-  orig: 250, 250
-  offset: 0, 0
-  index: 2
-start
-  rotate: false
-  xy: 2, 626
-  size: 767, 266
-  orig: 767, 266
   offset: 0, 0
   index: -1
 title
@@ -53,51 +73,3 @@ title
   orig: 520, 39
   offset: 0, 0
   index: -1
-
-menuSprites2.png
-size: 1024,1024
-format: RGBA8888
-filter: Nearest,Nearest
-repeat: none
-quit
-  rotate: false
-  xy: 2, 638
-  size: 489, 316
-  orig: 489, 316
-  offset: 0, 0
-  index: 3
-quit
-  rotate: false
-  xy: 2, 320
-  size: 489, 316
-  orig: 489, 316
-  offset: 0, 0
-  index: 4
-quit
-  rotate: false
-  xy: 493, 638
-  size: 489, 316
-  orig: 489, 316
-  offset: 0, 0
-  index: 5
-quit
-  rotate: false
-  xy: 2, 2
-  size: 489, 316
-  orig: 489, 316
-  offset: 0, 0
-  index: 6
-settings
-  rotate: false
-  xy: 493, 386
-  size: 250, 250
-  orig: 250, 250
-  offset: 0, 0
-  index: 3
-settings
-  rotate: false
-  xy: 493, 134
-  size: 250, 250
-  orig: 250, 250
-  offset: 0, 0
-  index: 4
